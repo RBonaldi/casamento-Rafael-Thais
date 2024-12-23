@@ -372,7 +372,7 @@
             const conteudoDiv = document.getElementById('conteudo');
         
             // Check if user is authenticated
-            if (!sessionStorage.getItem('TR-Authenticated')) {
+            if (!sessionStorage.getItem('TRAuthenticated')) {
                 loginModal.style.display = 'block';
             } else {
                 conteudoDiv.style.display = 'block';
@@ -384,7 +384,7 @@
                 const password = document.getElementById('password').value;
         
                 if (username === 'convidado' && password === '170426') {
-                    sessionStorage.setItem('TR-Authenticated', 'true');
+                    sessionStorage.setItem('TRAuthenticated', 'true');
                     loginModal.style.display = 'none';
                     conteudoDiv.style.display = 'block';
                 } else {
