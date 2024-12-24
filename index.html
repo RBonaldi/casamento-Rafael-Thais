@@ -373,10 +373,10 @@
         
             loginForm.addEventListener('submit', function(event) {
                 event.preventDefault();
-                const username = document.getElementById('username').value;
+                const username = document.getElementById('username').value.toUpperCase();
                 const password = document.getElementById('password').value;
         
-                if (username === 'convidado' && password === '170426') {
+                if (username === 'CONVIDADO' && password === '170426') {
                     sessionStorage.setItem('TRAuthenticated', 'true');
                     loginModal.style.display = 'none';
                     conteudoDiv.style.display = 'block';
