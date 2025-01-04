@@ -11201,7 +11201,7 @@ body {
 }
 
 #countdown {
-  font-size: 2em;
+  font-size: 1.7em;
   font-weight: bold;
   color: #000;
 }
@@ -11274,22 +11274,4 @@ body {
 
 .btn-block {
     width: 100%;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .form-check-inline {
-      display: block;
-      margin-bottom: 10px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    max-height: 265px !important;
-  }
 }
