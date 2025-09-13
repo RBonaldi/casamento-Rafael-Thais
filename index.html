@@ -49,7 +49,7 @@
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#projects">Programação</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#estamos-quase-la">Programação</a></li>
                             <li class="nav-item"><a class="nav-link" href="#info">Informações</a></li>
                             <li class="nav-item"><a class="nav-link" href="#signup">R.S.V.P</a></li>
                         </ul>
@@ -87,12 +87,12 @@
                 </div>
             </section>
             <!-- Projects-->
-            <section id="projects">
+            <section id="projects" style="padding: 0; margin: 0;">
                 <!-- Seção com imagem de fundo conectada -->
-                <div style="background-image: url('assets/img/fundoClear.jpeg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="background-connected" style="background-image: url('assets/img/fundoClear.jpeg'); margin: 0; padding: 0;">
                     <div class="container px-4 px-lg-5">
                         <!-- Featured Project Row-->
-                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center" style="padding: 2rem 0;">
+                        <div class="row gx-0 mb-4 mb-lg-5 align-items-center" id="estamos-quase-la" style="padding: 3rem 0; margin: 0;">
                             <div class="col-xl-8 col-lg-7">
                                 <img class="img-fluid mb-3 mb-lg-0" src="assets/img/two-thais-rafael.jpeg" alt="..." />
                             </div>
@@ -105,101 +105,113 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="container px-4 px-lg-5">
-                    <!-- Project One Row-->
-                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="info">
-                        <div class="col-lg-6"><img class="img-fluid" src="assets/img/clubeMed.jpg" alt="..." /></div>
-                        <div class="col-lg-6">
-                            <div class="bg-black text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-left">
-                                        <p class="mb-0 text-white-50">
-                                            <br><br><strong>Opções de hospedagem próximas ao local:</strong><br><br>
-                                            <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 1rem; margin: 1rem 0;">
-                                                <p class="mb-3" style="font-size: 0.95rem; line-height: 1.6;">
-                                                    Para tornar sua estadia ainda mais especial, preparamos um guia completo com as melhores opções de hospedagem na região de Trancoso, com informações detalhadas e dicas exclusivas.
-                                                </p>
-                                                <div class="text-center">
-                                                    <a href="assets/Opções de Hospedagens R&T.pdf" target="_blank" class="btn btn-primary btn-custom">
-                                                        <i class="fas fa-map-marker-alt"></i> Consultar Guia de Hospedagens
-                                                    </a>
+                    <!-- Hospedagem conectada no mesmo fundo -->
+                    <div class="container px-4 px-lg-5">
+                        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="info" style="padding: 2rem 0; margin: 0;">
+                            <div class="col-lg-6"><img class="img-fluid" src="assets/img/clubeMed.jpg" alt="..." /></div>
+                            <div class="col-lg-6">
+                                <div class="bg-black text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                                            <p class="mb-0 text-white-50">
+                                                <br><br><strong>Opções de hospedagem próximas ao local:</strong><br><br>
+                                                <div style="background: rgba(255, 255, 255, 0.1); padding: 1.5rem; border-radius: 1rem; margin: 1rem 0;">
+                                                    <p class="mb-3" style="font-size: 0.95rem; line-height: 1.6;">
+                                                        Para tornar sua estadia ainda mais especial, preparamos um guia completo com as melhores opções de hospedagem na região de Trancoso, com informações detalhadas e dicas exclusivas.
+                                                    </p>
+                                                    <div class="text-center">
+                                                        <a href="assets/Opções de Hospedagens R&T.pdf" target="_blank" class="btn btn-primary btn-custom">
+                                                            <i class="fas fa-map-marker-alt"></i> Consultar Guia de Hospedagens
+                                                        </a>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </p>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Project Two Row-->
-                    <div class="row gx-0 justify-content-center">
-                        <div class="col-lg-6"><img class="img-fluid" src="assets/img/presente.jpeg" alt="..." /></div>
-                        <div class="col-lg-6 order-lg-first">
-                            <div class="bg-black text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                                        <h4 class="text-white">Lista de Presentes</h4>
-                                        <p class="mb-0 text-white-50" style="margin: 7px;">
-                                            Queridos amigos e familiares,<br>
-                                            Para aqueles que desejarem nos presentear, criamos listas de presentes em algumas lojas. Agradecemos de coração por cada gesto de carinho.<br>
-                                            <a href="https://www.taniabulhoeslista.com.br/lista/4663" target="_blank" class="btn btn-primary btn-custom mt-2">Tania Bulhões</a><br>
-                                            <a href="https://presentes.lavillecasa.com.br/lista/19112024164124333" target="_blank" class="btn btn-primary btn-custom mt-2">La Ville Casa</a>
-                                        </p>
+                </div>
+                <!-- Lista de Presentes com fundo próprio -->
+                <div class="background-connected" style="background-image: url('assets/img/fundoClear.jpeg'); margin: 0; padding: 0;">
+                    <div class="container px-4 px-lg-5">
+                        <div class="row gx-0 justify-content-center" style="padding: 2rem 0; margin: 0;">
+                            <div class="col-lg-6"><img class="img-fluid" src="assets/img/presente.jpeg" alt="..." /></div>
+                            <div class="col-lg-6 order-lg-first">
+                                <div class="bg-black text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                                            <h4 class="text-white">Lista de Presentes</h4>
+                                            <p class="mb-0 text-white-50" style="margin: 7px;">
+                                                Queridos amigos e familiares,<br>
+                                                Para aqueles que desejarem nos presentear, criamos listas de presentes em algumas lojas. Agradecemos de coração por cada gesto de carinho.<br>
+                                                <a href="https://www.taniabulhoeslista.com.br/lista/4663" target="_blank" class="btn btn-primary btn-custom mt-2">Tania Bulhões</a><br>
+                                                <a href="https://presentes.lavillecasa.com.br/lista/19112024164124333" target="_blank" class="btn btn-primary btn-custom mt-2">La Ville Casa</a>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Thee-->
-                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="info">
-                        <div class="col-lg-6"><img class="img-fluid" src="assets/img/dress.jpg" alt="..." /></div>
-                        <div class="col-lg-6">
-                            <div class="bg-black text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-left">
-                                        <h4 class="text-white">Código de Vestimenta</h4>
-                                        <p class="mb-0 text-white-50" style="margin: 7px;">
-                                            Queridos convidados,<br><br>
-                                            Para que todos se sintam confortáveis e alinhados com o estilo do nosso casamento, pedimos que sigam as seguintes orientações de vestimenta:<br><br>
-                                            <strong>Mulheres:</strong> Vestido midi ou longo, evitando cores nude, branco ou similares.<br>
-                                            <strong>Homens:</strong> Esporte fino, com calça e blusa social. Se preferirem, terno também é bem-vindo.<br><br>
-                                            Agradecemos a compreensão e colaboração de todos para que possamos evitar qualquer constrangimento.<br>
-                                        </p>
+                </div>
+                <!-- Código de Vestimenta com fundo próprio -->
+                <div class="background-connected" style="background-image: url('assets/img/fundoClear.jpeg'); margin: 0; padding: 0;">
+                    <div class="container px-4 px-lg-5">
+                        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="info" style="padding: 2rem 0; margin: 0;">
+                            <div class="col-lg-6"><img class="img-fluid" src="assets/img/dress.jpg" alt="..." /></div>
+                            <div class="col-lg-6">
+                                <div class="bg-black text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                                            <h4 class="text-white">Código de Vestimenta</h4>
+                                            <p class="mb-0 text-white-50" style="margin: 7px;">
+                                                Queridos convidados,<br><br>
+                                                Para que todos se sintam confortáveis e alinhados com o estilo do nosso casamento, pedimos que sigam as seguintes orientações de vestimenta:<br><br>
+                                                <strong>Mulheres:</strong> Vestido midi ou longo, evitando cores nude, branco ou similares.<br>
+                                                <strong>Homens:</strong> Esporte fino, com calça e blusa social. Se preferirem, terno também é bem-vindo.<br><br>
+                                                Agradecemos a compreensão e colaboração de todos para que possamos evitar qualquer constrangimento.<br>
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- transporte-->
-                    <div class="row gx-0 justify-content-center">
-                        <div class="col-lg-6"><img class="img-fluid" src="assets/img/tranport.jpg" alt="..." /></div>
-                        <div class="col-lg-6 order-lg-first">
-                            <div class="bg-black text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                                        <h4 class="text-white">Transporte</h4>
-                                        <p class="mb-0 text-white-50" style="margin: 7px;">
-                                            Queridos amigos e familiares,<br>
-                                            Em breve teremos atualizações sobre as opções de transporte para o evento.
-                                        </p>
+                </div>
+                <!-- Transporte e Programação com fundo conectado -->
+                <div class="background-connected" style="background-image: url('assets/img/fundoClear.jpeg'); margin: 0; padding: 0;">
+                    <div class="container px-4 px-lg-5">
+                        <div class="row gx-0 justify-content-center" style="padding: 2rem 0; margin: 0;">
+                            <div class="col-lg-6"><img class="img-fluid" src="assets/img/tranport.jpg" alt="..." /></div>
+                            <div class="col-lg-6 order-lg-first">
+                                <div class="bg-black text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                                            <h4 class="text-white">Transporte</h4>
+                                            <p class="mb-0 text-white-50" style="margin: 7px;">
+                                                Queridos amigos e familiares,<br>
+                                                Em breve teremos atualizações sobre as opções de transporte para o evento.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- programacao-->
-                    <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="info">
-                        <div class="col-lg-6"><img class="img-fluid" src="assets/img/programmer.jpg" alt="..." /></div>
-                        <div class="col-lg-6">
-                            <div class="bg-black text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-left">
-                                        <h4 class="text-white">Programação</h4>
-                                        <p class="mb-0 text-white-50" style="margin: 7px;">
-                                            Queridos amigos e familiares,<br>
-                                            Em breve teremos atualizações sobre a programação do nosso casamento.
-                                        </p>
+                        <!-- programacao conectada no mesmo fundo -->
+                        <div class="row gx-0 mb-5 mb-lg-0 justify-content-center" id="programacao" style="padding: 2rem 0; margin: 0;">
+                            <div class="col-lg-6"><img class="img-fluid" src="assets/img/programmer.jpg" alt="..." /></div>
+                            <div class="col-lg-6">
+                                <div class="bg-black text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-left">
+                                            <h4 class="text-white">Programação</h4>
+                                            <p class="mb-0 text-white-50" style="margin: 7px;">
+                                                Queridos amigos e familiares,<br>
+                                                Em breve teremos atualizações sobre a programação do nosso casamento.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

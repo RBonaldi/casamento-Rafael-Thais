@@ -11462,6 +11462,37 @@ img {
   margin-left: 4px;
 }
 
+/* Fundo conectado responsivo */
+.background-connected {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+@media (max-width: 768px) {
+  .background-connected {
+    background-size: cover;
+    background-position: center top;
+  }
+  
+  .background-connected .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .background-connected .row {
+    padding: 1.5rem 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .background-connected {
+    background-size: 120% auto;
+    background-position: center center;
+  }
+}
+
 /* RESPONSIVIDADE - MOBILE FIRST */
 
 /* Extra Small devices (portrait phones, less than 576px) */
