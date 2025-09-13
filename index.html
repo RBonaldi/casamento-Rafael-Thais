@@ -287,7 +287,7 @@
                                         <p class="mb-2">Teatro L'Occitane<br>
                                         Estrada Municipal de Trancoso km 19<br>
                                         Porto Seguro - BA, 45810-000</p>
-                                        <a href="https://waze.com/ul?ll=-16.5881,-39.0956&navigate=yes&q=Teatro+L'Occitane+Trancoso" target="_blank">
+                                        <a href="waze://?ll=-16.5881,-39.0956&navigate=yes&q=Teatro%20L'Occitane%20Trancoso" onclick="openWaze(event)" target="_blank">
                                             <i class="fab fa-waze"></i> Teatro L'Occitane - Trancoso (Waze)
                                         </a><br>
                                         <a href="https://www.google.com/maps/dir/?api=1&destination=Teatro+L'Occitane,+Estrada+Municipal+de+Trancoso+km+19,+Porto+Seguro+-+BA,+45810-000" target="_blank">
@@ -468,6 +468,33 @@
             // Restaura o botão ao estado original
             submitButton.disabled = false;
             submitButton.innerHTML = originalText;
+        }
+    }
+
+    // Função para abrir Waze com fallback
+    function openWaze(event) {
+        event.preventDefault();
+        
+        const wazeAppUrl = "waze://?ll=-16.5881,-39.0956&navigate=yes&q=Teatro%20L'Occitane%20Trancoso";
+        const wazeWebUrl = "https://waze.com/ul?ll=-16.5881,-39.0956&navigate=yes&q=Teatro+L'Occitane+Trancoso";
+        
+        // Detecta se é dispositivo móvel
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        
+        if (isMobile) {
+            // Tenta abrir o app do Waze
+            const startTime = Date.now();
+            window.location.href = wazeAppUrl;
+            
+            // Se após 2 segundos ainda estiver na página, abre o link web
+            setTimeout(function() {
+                if (Date.now() - startTime < 2500) {
+                    window.open(wazeWebUrl, '_blank');
+                }
+            }, 2000);
+        } else {
+            // Para desktop, abre diretamente o link web
+            window.open(wazeWebUrl, '_blank');
         }
     }
 </script>
