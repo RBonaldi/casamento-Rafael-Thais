@@ -11796,3 +11796,59 @@ img {
     padding: 1rem;
   }
 }
+
+/* Mobile improvements for project sections */
+@media (max-width: 767.98px) {
+  .bg-black.h-100.project {
+    min-height: 300px !important;
+  }
+  
+  .project-text {
+    padding: 2rem 1.5rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+  }
+  
+  .project-text h4 {
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .project-text p {
+    line-height: 1.6 !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  .project-text .btn {
+    margin-top: 1rem !important;
+  }
+}
+
+/* Extra padding for very small screens */
+@media (max-width: 575.98px) {
+  .bg-black.h-100.project {
+    min-height: 350px !important;
+  }
+  
+  .project-text {
+    padding: 2.5rem 1.5rem !important;
+  }
+  
+  /* Ensure buttons have proper spacing */
+  .project-text .btn-primary {
+    margin: 0.5rem 0 !important;
+    padding: 0.75rem 1.25rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  /* Better spacing for list content */
+  .project-text br {
+    line-height: 2 !important;
+  }
+  
+  /* Improve readability on mobile */
+  .project-text .text-white-50 {
+    font-size: 0.95rem !important;
+    line-height: 1.7 !important;
+  }
+}
