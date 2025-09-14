@@ -11981,93 +11981,10 @@ img {
   }
 }
 
-/* Responsividade para mobile */
+/* Responsividade para mobile - oculta o varal */
 @media (max-width: 768px) {
   .flower-garland {
-    height: 120px;
-    padding: 0 1% 0 1%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 100%);
-    z-index: 15;
-  }
-  
-  .flower-item img {
-    max-height: 90px;
-  }
-  
-  /* Ajusta os tamanhos das flores para mobile mantendo efeito natural */
-  .flower-item:nth-child(1) { transform: scale(1.1); }
-  .flower-item:nth-child(2) { transform: scale(0.85); }
-  .flower-item:nth-child(3) { transform: scale(1.3); }
-  .flower-item:nth-child(4) { transform: scale(0.9); }
-  .flower-item:nth-child(5) { transform: scale(1.15); }
-  .flower-item:nth-child(6) { transform: scale(0.8); }
-  .flower-item:nth-child(7) { transform: scale(1.05); }
-  .flower-item:nth-child(8) { transform: scale(0.95); }
-  
-  /* Oculta algumas flores em mobile para não ficar muito apertado */
-  .flower-item:nth-child(9),
-  .flower-item:nth-child(10),
-  .flower-item:nth-child(11),
-  .flower-item:nth-child(12) {
     display: none;
   }
 }
 
-/* Responsividade para telas pequenas (iPhone SE, etc) */
-@media (max-width: 480px) {
-  .flower-garland {
-    height: 70px;
-    padding: 0 1% 0 1%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
-    z-index: 15;
-    overflow: hidden;
-  }
-  
-  .flower-item img {
-    max-height: 50px;
-  }
-  
-  /* Mostra apenas 6 flores em telas pequenas */
-  .flower-item:nth-child(7),
-  .flower-item:nth-child(8) {
-    display: none;
-  }
-  
-  /* Ajusta os tamanhos para telas pequenas */
-  .flower-item:nth-child(1) { transform: scale(0.9); }
-  .flower-item:nth-child(2) { transform: scale(0.7); }
-  .flower-item:nth-child(3) { transform: scale(1.0); }
-  .flower-item:nth-child(4) { transform: scale(0.8); }
-  .flower-item:nth-child(5) { transform: scale(0.95); }
-  .flower-item:nth-child(6) { transform: scale(0.75); }
-}
-
-/* Responsividade para telas extra pequenas (Galaxy Fold, etc) */
-@media (max-width: 360px) {
-  .flower-garland {
-    height: 50px;
-    padding: 0 2% 0 2%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 35%, black 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 35%, black 100%);
-    z-index: 15;
-    overflow: hidden;
-  }
-  
-  .flower-item img {
-    max-height: 35px;
-  }
-  
-  /* Mostra apenas 4 flores nas telas muito pequenas */
-  .flower-item:nth-child(5),
-  .flower-item:nth-child(6) {
-    display: none;
-  }
-  
-  /* Tamanhos proporcionais para telas extra pequenas */
-  .flower-item:nth-child(1) { transform: scale(0.8); }
-  .flower-item:nth-child(2) { transform: scale(1.0); }
-  .flower-item:nth-child(3) { transform: scale(0.7); }
-  .flower-item:nth-child(4) { transform: scale(0.9); }
-}
