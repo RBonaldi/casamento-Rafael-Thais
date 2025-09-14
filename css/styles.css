@@ -11113,11 +11113,35 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 0;
   background: transparent;
   margin-bottom: 0;
 }
+
+.about-section .container {
+  position: relative;
+  z-index: 20;
+}
+
+.about-section h2,
+.about-section p,
+.about-section .text-highlight,
+.about-section .text-highlight-50 {
+  position: relative;
+  z-index: 25;
+}
+
+.about-section .col-lg-6 img {
+  position: relative;
+  z-index: 5;
+}
+
+.about-section .container {
+  position: relative;
+  z-index: 10;
+}
+
 .about-section p {
   margin-bottom: 5rem;
 }
@@ -11292,7 +11316,7 @@ body {
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 1;
+    z-index: 15;
     left: 0;
     top: 0;
     width: 100%;
@@ -11518,7 +11542,8 @@ img {
   }
   
   .about-section {
-    padding: 3rem 0;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
   }
   
   .about-section .row {
@@ -11608,7 +11633,8 @@ img {
   }
   
   .about-section {
-    padding: 4rem 0;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
   }
   
   .projects-section {
@@ -11647,7 +11673,8 @@ img {
   }
   
   .about-section {
-    padding: 5rem 0;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
   }
   
   .projects-section {
@@ -11851,4 +11878,196 @@ img {
     font-size: 0.95rem !important;
     line-height: 1.7 !important;
   }
+}
+
+/* Varal de Flores Wisteria */
+.flower-garland {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  pointer-events: none;
+  z-index: 15;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 2% 0 2%;
+  margin-top: 0;
+  /* Corta apenas o topo, deixa a base natural */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 100%);
+  mask-image: linear-gradient(to bottom, transparent 0%, black 15%, black 100%);
+}
+
+.flower-item {
+  position: relative;
+  opacity: 0.75;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.2));
+  flex: 0 0 auto;
+}
+
+.flower-item img {
+  max-height: 160px;
+  width: auto;
+  transform-origin: center;
+}
+
+/* Posicionamento das flores - tamanhos variados para efeito natural */
+.flower-item:nth-child(1) {
+  transform: scale(1.2);
+}
+
+.flower-item:nth-child(2) {
+  transform: scale(0.8);
+}
+
+.flower-item:nth-child(3) {
+  transform: scale(1.4);
+}
+
+.flower-item:nth-child(4) {
+  transform: scale(0.9);
+}
+
+.flower-item:nth-child(5) {
+  transform: scale(1.1);
+}
+
+.flower-item:nth-child(6) {
+  transform: scale(1.3);
+}
+
+.flower-item:nth-child(7) {
+  transform: scale(0.85);
+}
+
+.flower-item:nth-child(8) {
+  transform: scale(1.25);
+}
+
+.flower-item:nth-child(9) {
+  transform: scale(0.95);
+}
+
+.flower-item:nth-child(10) {
+  transform: scale(1.15);
+}
+
+.flower-item:nth-child(11) {
+  transform: scale(0.9);
+}
+
+.flower-item:nth-child(12) {
+  transform: scale(1.0);
+}
+
+/* Responsividade para tablet e mobile */
+@media (max-width: 992px) {
+  .flower-garland {
+    height: 140px;
+    padding: 0 1.5% 0 1.5%;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 100%);
+  }
+  
+  .flower-item img {
+    max-height: 110px;
+  }
+  
+  /* Oculta algumas flores em tablets */
+  .flower-item:nth-child(11),
+  .flower-item:nth-child(12) {
+    display: none;
+  }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+  .flower-garland {
+    height: 120px;
+    padding: 0 1% 0 1%;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 100%);
+    z-index: 15;
+  }
+  
+  .flower-item img {
+    max-height: 90px;
+  }
+  
+  /* Ajusta os tamanhos das flores para mobile mantendo efeito natural */
+  .flower-item:nth-child(1) { transform: scale(1.1); }
+  .flower-item:nth-child(2) { transform: scale(0.85); }
+  .flower-item:nth-child(3) { transform: scale(1.3); }
+  .flower-item:nth-child(4) { transform: scale(0.9); }
+  .flower-item:nth-child(5) { transform: scale(1.15); }
+  .flower-item:nth-child(6) { transform: scale(0.8); }
+  .flower-item:nth-child(7) { transform: scale(1.05); }
+  .flower-item:nth-child(8) { transform: scale(0.95); }
+  
+  /* Oculta algumas flores em mobile para não ficar muito apertado */
+  .flower-item:nth-child(9),
+  .flower-item:nth-child(10),
+  .flower-item:nth-child(11),
+  .flower-item:nth-child(12) {
+    display: none;
+  }
+}
+
+/* Responsividade para telas pequenas (iPhone SE, etc) */
+@media (max-width: 480px) {
+  .flower-garland {
+    height: 70px;
+    padding: 0 1% 0 1%;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 30%, black 100%);
+    z-index: 15;
+    overflow: hidden;
+  }
+  
+  .flower-item img {
+    max-height: 50px;
+  }
+  
+  /* Mostra apenas 6 flores em telas pequenas */
+  .flower-item:nth-child(7),
+  .flower-item:nth-child(8) {
+    display: none;
+  }
+  
+  /* Ajusta os tamanhos para telas pequenas */
+  .flower-item:nth-child(1) { transform: scale(0.9); }
+  .flower-item:nth-child(2) { transform: scale(0.7); }
+  .flower-item:nth-child(3) { transform: scale(1.0); }
+  .flower-item:nth-child(4) { transform: scale(0.8); }
+  .flower-item:nth-child(5) { transform: scale(0.95); }
+  .flower-item:nth-child(6) { transform: scale(0.75); }
+}
+
+/* Responsividade para telas extra pequenas (Galaxy Fold, etc) */
+@media (max-width: 360px) {
+  .flower-garland {
+    height: 50px;
+    padding: 0 2% 0 2%;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 35%, black 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 35%, black 100%);
+    z-index: 15;
+    overflow: hidden;
+  }
+  
+  .flower-item img {
+    max-height: 35px;
+  }
+  
+  /* Mostra apenas 4 flores nas telas muito pequenas */
+  .flower-item:nth-child(5),
+  .flower-item:nth-child(6) {
+    display: none;
+  }
+  
+  /* Tamanhos proporcionais para telas extra pequenas */
+  .flower-item:nth-child(1) { transform: scale(0.8); }
+  .flower-item:nth-child(2) { transform: scale(1.0); }
+  .flower-item:nth-child(3) { transform: scale(0.7); }
+  .flower-item:nth-child(4) { transform: scale(0.9); }
 }
